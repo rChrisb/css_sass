@@ -191,7 +191,7 @@ body {
     .card__side--front--2 {
       background-color: #000; }
     .card__side--front--3 {
-      background-color: #c5a955; }
+      background-color: darkblue; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back--1 {
