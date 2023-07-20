@@ -48,8 +48,12 @@ iframe {
   height: 50.5rem;
   z-index: 999;
   margin: 2rem;
+  transition: all 3s;
+  &:hover.at-head {
+    transform: translateY(-4rem) scale(1.2);
+  }
 
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 .fixed {
   position: fixed;

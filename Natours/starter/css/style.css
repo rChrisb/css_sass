@@ -52,7 +52,10 @@ iframe {
   height: 50.5rem;
   z-index: 999;
   margin: 2rem;
-  pointer-events: none; }
+  transition: all 3s;
+  /* pointer-events: none; */ }
+  iframe:hover.at-head {
+    transform: translateY(-4rem) scale(1.2); }
 
 .fixed {
   position: fixed;
