@@ -35,6 +35,13 @@
       background-color: $color-white;
     }
   }
+  &--primary-color {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
 
   &::after {
     content: "";

@@ -84,6 +84,12 @@ iframe.at-head,
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 12rem; }
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -164,6 +170,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--primary-color {
+  background-color: #c5a955;
+  color: #fff; }
+  .btn--primary-color::after {
+    background-color: #c5a955; }
 
 .btn::after {
   content: "";
@@ -270,6 +282,23 @@ body {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -383,4 +412,4 @@ body {
   background-color: #f7f7f7;
   padding: 25rem;
   margin-top: -12vh;
-  padding: 25rem 0 50rem 0; }
+  padding: 25rem 0 15rem 0; }
