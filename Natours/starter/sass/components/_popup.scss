@@ -6,11 +6,42 @@
   top: 0;
   left: 0;
   z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      text-decoration: none;
+      color: $color-grey-dark;
+      font-size: 3rem;
+      display: inline-block;
+      line-height: 0.5;
+      transition: all 0.2s;
+    }
+    &:hover {
+      color: $color-primary--dark;
+    }
+  }
+  &:target {
+    opacity: 1;
+    visibility: visible;
+    .popup__content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
   &__content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.4s 0.2s;
 
     width: 70%;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
