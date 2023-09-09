@@ -6,7 +6,20 @@
 
 html {
   //this sets what 1rem is
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem = 10px  (because by default one rem is 16px)
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%; //because i want 1rem=9px => 9/16
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 body {
   box-sizing: border-box;
