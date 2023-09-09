@@ -10,6 +10,14 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
     border-radius: 50%;
     z-index: 2001;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
@@ -33,6 +41,14 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
     z-index: 1000;
     background-image: radial-gradient(
       $color-primary--light,
